@@ -76,10 +76,11 @@ class App extends Component {
           onChange={this.handleInputChange}
         />
         <button onClick={this.handleClick}>Search</button>
-        <button onClick={() => window.location.reload(false)}>Click to reload!</button>
+        <button onClick={() => window.location.reload(false)}> Reload!</button>
         {this.state.employeesData.map(employee => (
           <EmployeeCard
             id={employee.id}
+            key={employee.id}
             firstname={employee.firstname}
             lastname={employee.lastname}
             image={employee.image}

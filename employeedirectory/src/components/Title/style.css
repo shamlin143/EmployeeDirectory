@@ -1,3 +1,9 @@
+button {
+  height: 35px;
+}
+input {
+  height: 35px;
+}
 .title {
     width: 100%;
     text-align: center;
@@ -6,4 +12,3 @@
     color: #2A77AE;
     margin-bottom: 50px;
   }
-  

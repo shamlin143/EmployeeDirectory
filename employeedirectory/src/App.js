@@ -5,22 +5,17 @@ import Title from "./components/Title";
 import employees from "./employees.json";
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
+  // Setting this.state.employee to the employees json array
   constructor(props) {
     super(props);
     this.searchEmployee = this.searchEmployee.bind(this)
     this.state = {employeesData: employees, query: "s"};
-
-
-    
-    
-    
   }
 
   searchEmployee = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being searched
+    // Filter this.state.Employees for friends with an id not equal to the id being searched
     //const employeesFilter = this.state.employeesData.filter(employee => employee.id !== id);
-    // Set this.state.friends equal to the new friends array
+    // Set this.state.employees equal to the new friends array
   //this.setState({ employeesData: employeesFilter});
   console.log("inside the search function")
   };
@@ -37,14 +32,12 @@ class App extends Component {
       e.preventDefault();
       let filterData = this.state.employeesData.filter(employee =>employee.firstname === this.state.query)
       this.setState({
-        employeesData: filterData
-        
+        employeesData: filterData        
       });
     }
-  
-  
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
+
+  // Map over this.state.Employees and render a FriendCard component for each friend object
   render() {
     return (
       <Wrapper>
@@ -57,7 +50,6 @@ class App extends Component {
         {this.state.employeesData.map(employee => (
           <EmployeeCard
             id={employee.id}
-            //key={empolyee.id}
             firstname={employee.firstname}
             lastname={employee.lastname}
             image={employee.image}
@@ -73,19 +65,3 @@ class App extends Component {
 
 export default App;
 
-// var Criteria = React.createClass({
-//   handleClick: function(e) {
-//     var criteria;
-//     e.preventDefault();
-//     criteria = React.findDOMNode(this.refs.search).value.trim();
-//     this.props.onSearch(criteria);
-//   },
-//   render: function() {
-//     return (
-//       <div>
-//         <input ref="search" type="search" placeholder="Search criteria" />
-//         <button onClick={this.handleClick}>Go</button>
-//       </div>
-//     );
-//   }
-// });

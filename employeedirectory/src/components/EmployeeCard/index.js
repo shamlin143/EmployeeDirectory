@@ -28,17 +28,5 @@ function employeeCard(props) {
   );
 }
 
-// class Child extends Component {
-//   render() {
-//       <div onClick={this.props.passedFunction}></div>
-//   }
-// }
-
-// class Parent extends Component {
-//   passedFunction = () => {}
-//   render() {
-//     <Child passedFunction={this.passedFunction}/>
-//   }
-// }
 
 export default employeeCard;

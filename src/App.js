@@ -34,17 +34,19 @@ class App extends Component {
     handleClick = (e) => {
       e.preventDefault();
       let filterData = this.state.employeesData.filter(employee =>employee.firstname === this.state.query)
-      this.setState({
+           this.setState({
         employeesData: filterData        
       });
+
     }
 
     handleClick = (e) => {
       e.preventDefault();
-      let filterData = this.state.employeesData.filter(employee =>employee.lastname === this.state.query)
+     let filterData = this.state.employeesData.filter(employee =>employee.lastname === this.state.query)
       this.setState({
         employeesData: filterData        
       });
+
     }
 
     handleClick = (e) => {
@@ -58,7 +60,7 @@ class App extends Component {
     handleClick = (e) => {
       e.preventDefault();
       let filterData = this.state.employeesData.filter(employee =>employee.occupation === this.state.query)
-      this.setState({
+            this.setState({
         employeesData: filterData        
       });
     }
@@ -76,10 +78,11 @@ class App extends Component {
           onChange={this.handleInputChange}
         />
         <button onClick={this.handleClick}>Search</button>
-        <button onClick={() => window.location.reload(false)}>Click to reload!</button>
+        <button onClick={() => window.location.reload(false)}> Reload!</button>
         {this.state.employeesData.map(employee => (
           <EmployeeCard
             id={employee.id}
+            key={employee.id}
             firstname={employee.firstname}
             lastname={employee.lastname}
             image={employee.image}

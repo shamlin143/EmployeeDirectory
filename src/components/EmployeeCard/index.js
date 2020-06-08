@@ -13,7 +13,7 @@ function employeeCard(props) {
             <strong>Firstname:</strong> {props.firstname}
           </li>
           <li>
-            <strong>Lastnametname:</strong> {props.lastname}
+            <strong>Lastname:</strong> {props.lastname}
           </li>
           <li>
             <strong>Occupation:</strong> {props.occupation}

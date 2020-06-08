@@ -11,6 +11,9 @@ class App extends Component {
     this.searchEmployee = this.searchEmployee.bind(this)
     this.state = {employeesData: employees, query: "s"};
   }
+ 
+
+
 
   searchEmployee = id => {
     // Filter this.state.Employees for friends with an id not equal to the id being searched
@@ -36,6 +39,29 @@ class App extends Component {
       });
     }
 
+    handleClick = (e) => {
+      e.preventDefault();
+      let filterData = this.state.employeesData.filter(employee =>employee.lastname === this.state.query)
+      this.setState({
+        employeesData: filterData        
+      });
+    }
+
+    handleClick = (e) => {
+      e.preventDefault();
+      let filterData = this.state.employeesData.filter(employee =>employee.location === this.state.query)
+      this.setState({
+        employeesData: filterData        
+      });
+    }
+
+    handleClick = (e) => {
+      e.preventDefault();
+      let filterData = this.state.employeesData.filter(employee =>employee.occupation === this.state.query)
+      this.setState({
+        employeesData: filterData        
+      });
+    }
 
   // Map over this.state.Employees and render a FriendCard component for each friend object
   render() {
@@ -46,7 +72,8 @@ class App extends Component {
           ref={input => (this.search = input)}
           onChange={this.handleInputChange}
         />
-        <button onClick={this.handleClick}>Go</button>
+        <button onClick={this.handleClick}>Search</button>
+        <button onClick={() => window.location.reload(false)}>Click to reload!</button>
         {this.state.employeesData.map(employee => (
           <EmployeeCard
             id={employee.id}
@@ -55,13 +82,15 @@ class App extends Component {
             image={employee.image}
             occupation={employee.occupation}
             location={employee.location}
-
           />
+        
         ))}
       </Wrapper>
     );
+
   }
 }
+
 
 export default App;
 

@@ -67,7 +67,10 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>Employees List</Title>
+        <Title>Employees List
+          Search by Firstname,Lastname,Occupation
+        </Title>
+        
         <input
           ref={input => (this.search = input)}
           onChange={this.handleInputChange}

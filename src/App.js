@@ -50,7 +50,7 @@ class App extends Component {
     return (
       <Wrapper>
         <Title>Employees List
-          Search by Firstname,Lastname,Occupation
+          Search by Firstname,Lastname,Occupation,Location
         </Title>
         
         <input

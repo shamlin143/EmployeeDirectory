@@ -31,35 +31,15 @@ class App extends Component {
   }
 
   
-    handleClick = (e) => {
-      e.preventDefault();
-      let filterData = this.state.employeesData.filter(employee =>employee.firstname === this.state.query)
-           this.setState({
-        employeesData: filterData        
-      });
+   
 
-    }
+   
+
+   
 
     handleClick = (e) => {
       e.preventDefault();
-     let filterData = this.state.employeesData.filter(employee =>employee.lastname === this.state.query)
-      this.setState({
-        employeesData: filterData        
-      });
-
-    }
-
-    handleClick = (e) => {
-      e.preventDefault();
-      let filterData = this.state.employeesData.filter(employee =>employee.location === this.state.query)
-      this.setState({
-        employeesData: filterData        
-      });
-    }
-
-    handleClick = (e) => {
-      e.preventDefault();
-      let filterData = this.state.employeesData.filter(employee =>employee.occupation === this.state.query)
+      let filterData = this.state.employeesData.filter(employee =>employee.occupation === this.state.query || employee.location === this.state.query || employee.lastname === this.state.query || employee.firstname === this.state.query)
             this.setState({
         employeesData: filterData        
       });

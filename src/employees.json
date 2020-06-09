@@ -6,7 +6,7 @@
     "lastname": "Hamlin",
     "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
     "occupation": "Intern",
-    "location": "Berhgeim Texas"
+    "location": "Bergheim Texas"
   },
   {
     "id": 2,
@@ -22,7 +22,7 @@
     "lastname": "Hamlin",
     "image": "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
     "occupation": "Intern",
-    "location": "Berhgeim Texas"
+    "location": "Bergheim Texas"
   },
   {
     "id": 4,
@@ -30,7 +30,7 @@
     "lastname": "Hamlin",
     "image": "http://static.tvtropes.org/pmwiki/pub/images/ickis.png",
     "occupation": "Electrician",
-    "location": "Berhgeim Texas"
+    "location": "Bergheim Texas"
   },
   {
     "id": 5,
@@ -54,7 +54,7 @@
     "lastname": "Connolly",
     "image": "http://vignette3.wikia.nocookie.net/p__/images/9/9a/Johnny_Bravo.png/revision/latest?cb=20131031233339&path-prefix=protagonist",
     "occupation": "File Clerk",
-    "location": "Berhgeim Texas"
+    "location": "Bergheim Texas"
   },
   {
     "id": 8,
@@ -62,7 +62,7 @@
     "lastname": "Hamlin",
     "image": "http://vignette2.wikia.nocookie.net/dragon-rap-battles/images/b/b6/Captain_Planet.png/revision/latest?cb=20160911200836",
     "occupation": "Intern",
-    "location": "Berhgeim Texas"
+    "location": "Bergheim Texas"
   }
  
 ]
